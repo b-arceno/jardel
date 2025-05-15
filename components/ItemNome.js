@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-// Componente de como será exibido o nome e o botão de excluir.
-// Defini como componente para caso precisar reutilizar ele em outra tela, por exemplo.
 export default function ItemNome({ nome, onExcluir }) {
   return (
     <View style={styles.container}>
@@ -14,7 +12,6 @@ export default function ItemNome({ nome, onExcluir }) {
   );
 }
 
-// Estilização, muito semelhante ao CSS normal. Nota-se que aqui eu não estou usando inline.
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
@@ -30,8 +27,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   botaoExcluir: {
-    backgroundColor: '#ff4d4d', // vermelho forte
-    borderRadius: 20,           // circular (metade da largura/altura)
+    backgroundColor: '#ff4d4d',
+    borderRadius: 20,
     width: 35,
     height: 35,
     justifyContent: 'center',
